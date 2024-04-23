@@ -1,6 +1,6 @@
 "use client";
 
-import { useSession, signOut } from "next-auth/react";
+import { useSession, signOut, signIn } from "next-auth/react";
 
 export const Header = () => {
   const session = useSession();
@@ -36,7 +36,7 @@ export const Header = () => {
           </a>
         ) : (
           <a
-            href="/api/auth/signin"
+            onClick={() => signIn(["google"])}
             className="cursor-pointer text-white no-underline ml-2 bg-[#1a73e8] border border-[1px] border-transparent login-btn"
           >
             Sign in
