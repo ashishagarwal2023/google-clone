@@ -24,7 +24,7 @@ export const Header = () => {
         {session.status === "authenticated" ? (
           <a onClick={() => signOut()}>
             <img
-              src={session["data"]["user"]["image"].replace(
+              src={session?.data?.user?.image?.replace(
                 "s96-c",
                 "s32-c-no"
               )}
