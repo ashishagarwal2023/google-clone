@@ -63,7 +63,7 @@ export const Main = () => {
         </button>
         <a>
           <button className="rounded border border-transparent bg-gray-50 py-2 px-4 text-sm hover:border-gray-200 hover:shadow">
-            I'm Feeling Lucky
+            I&apos;m Feeling Lucky
           </button>
         </a>
       </div>
