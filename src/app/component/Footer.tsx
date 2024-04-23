@@ -4,7 +4,7 @@ export const Footer = () => {
       <div className="border-b bg-gray-100 py-4 px-8">
         <p>India</p>
       </div>
-      <div class="flex justify-between bg-gray-100 py-4 px-8 text-sm">
+      <div className="flex justify-between bg-gray-100 py-4 px-8 text-sm">
         <div className="flex flex-col space-y-2 sm:flex-row sm:space-x-4 sm:space-y-0">
           <a href="#" className="hover:underline">
             About
