@@ -15,10 +15,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="ULXVhmWyLRG9dl7SU5KY-WM0q1P4Y9Oa8DZ8uG9cBF8"
+        />
+      </head>
       <body>
-        <NextAuthProvider>
-          {children}
-        </NextAuthProvider>
+        <NextAuthProvider>{children}</NextAuthProvider>
       </body>
     </html>
   );
