@@ -1,8 +1,22 @@
+const countries = [
+  "India",
+  "United States",
+  "United Kingdom",
+  "Brazil",
+  "Europe",
+  "Pakistan",
+  "Afghanistan",
+]
+
 export const Footer = () => {
   return (
     <footer className="text-[15px] text-gray-500 mt-8 md:fixed md:bottom-0 w-full">
       <div className="border-b bg-gray-100 py-4 px-8">
-        <p>India</p>
+        <select className="focus:outline-none select-none">
+          {countries.map((country, index) => (
+            <option>{country}</option>
+          ))}          
+        </select>
       </div>
       <div className="flex justify-between bg-gray-100 py-4 px-8 text-sm">
         <div className="flex flex-col space-y-2 sm:flex-row sm:space-x-4 sm:space-y-0">

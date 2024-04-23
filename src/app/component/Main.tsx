@@ -28,10 +28,10 @@ export const Main = () => {
     }
     const url =
       "https://google.com/search?q=" + encodeURIComponent(finalSearch);
-    window.open(url);
+    window.location.href =url;
   }
   return (
-    <main className="flex items-center justify-center flex-col mt-8 lg:mt-16">
+    <main className="flex items-center justify-center flex-col mt-8 lg:mt-16 select-none">
       <img
         className="w-52 sm:w-[272px]"
         width="272"
@@ -68,7 +68,7 @@ export const Main = () => {
         </a>
       </div>
 
-      <div className="text-sm">
+      <div className="text-sm select-text">
         <p className="text-center space-y-1">
           <span>Google offered in:</span>
           <span className="block sm:inline sm:ml-2 space-x-2">
@@ -77,6 +77,13 @@ export const Main = () => {
                 {language}
               </a>
             ))}
+          </span>
+          <br />
+          <span className="text-transparent selection:text-black select-text mt-2">
+            Google Clone by {" "}
+            <a href="https://github.com/ashishagarwal2023" target="_blank" className="selection:text-blue-500">
+              @ashishagarwal2023
+            </a>. Not the real!
           </span>
         </p>
       </div>
