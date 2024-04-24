@@ -1,6 +1,7 @@
 "use client";
 
 import { useSession, signOut, signIn } from "next-auth/react";
+import Image from "next/image";
 
 export const Header = () => {
   const session = useSession();
@@ -14,29 +15,29 @@ export const Header = () => {
       </a>
       {session.status === "authenticated" && (
         <button className="rounded-full p-2 hover:bg-gray-100">
-          <img src="/icons/expirements.svg" />
+          <Image src="/icons/expirements.svg" width={24} height={24} alt="Expirements Icon" />
         </button>
       )}
       <button className="mr-5 rounded-full p-2 hover:bg-gray-100 h-10 w-10 fill-[#5f6368]">
-        <img src="/icons/bars.svg" />
+        <Image src="/icons/bars.svg" width={40} height={40} alt="Bars Icon" />
       </button>
       <button>
         {session.status === "authenticated" ? (
           <a onClick={() => signOut()}>
-            <img
+            <Image
               src={session?.data?.user?.image?.replace(
                 "s96-c",
                 "s32-c-no"
-              )}
-              width="32"
-              height="32"
+              ) || ""}
+              width={32}
+              height={32}
               className="rounded-full"
               alt="You"
             />
           </a>
         ) : (
           <a
-            onClick={() => signIn(["google"])}
+            onClick={() => signIn("google")}
             className="cursor-pointer text-white no-underline ml-2 bg-[#1a73e8] border border-[1px] border-transparent login-btn"
           >
             Sign in
