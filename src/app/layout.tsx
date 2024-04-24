@@ -1,3 +1,5 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import NextAuthProvider from "./component/NexAuthProvider";
 
 import type { Metadata } from "next";

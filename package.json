@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.0.10",
     "next": "14.2.2",
     "next-auth": "^4.24.7",
     "next-image-export-optimizer": "^1.12.3",

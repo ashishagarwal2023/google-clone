@@ -29,6 +29,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:20.12.7"],\
           ["@types/react", "npm:18.2.79"],\
           ["@types/react-dom", "npm:18.2.25"],\
+          ["@vercel/speed-insights", "virtual:17104e199f56e3e831bde74dc73a4112ed874338937ea25528936bbf87fbdca90949f1cd38f0c7af5a4cd0fa8f3c2b3298c91830771445ddbc435d6947a44994#npm:1.0.10"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-next", "virtual:17104e199f56e3e831bde74dc73a4112ed874338937ea25528936bbf87fbdca90949f1cd38f0c7af5a4cd0fa8f3c2b3298c91830771445ddbc435d6947a44994#npm:14.2.2"],\
           ["next", "virtual:17104e199f56e3e831bde74dc73a4112ed874338937ea25528936bbf87fbdca90949f1cd38f0c7af5a4cd0fa8f3c2b3298c91830771445ddbc435d6947a44994#npm:14.2.2"],\
@@ -772,6 +773,48 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/@ungap-structured-clone-npm-1.2.0-648f0b82e0-10c0.zip/node_modules/@ungap/structured-clone/",\
         "packageDependencies": [\
           ["@ungap/structured-clone", "npm:1.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@vercel/speed-insights", [\
+      ["npm:1.0.10", {\
+        "packageLocation": "./.yarn/unplugged/@vercel-speed-insights-virtual-7948f3a633/node_modules/@vercel/speed-insights/",\
+        "packageDependencies": [\
+          ["@vercel/speed-insights", "npm:1.0.10"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:17104e199f56e3e831bde74dc73a4112ed874338937ea25528936bbf87fbdca90949f1cd38f0c7af5a4cd0fa8f3c2b3298c91830771445ddbc435d6947a44994#npm:1.0.10", {\
+        "packageLocation": "./.yarn/unplugged/@vercel-speed-insights-virtual-7948f3a633/node_modules/@vercel/speed-insights/",\
+        "packageDependencies": [\
+          ["@vercel/speed-insights", "virtual:17104e199f56e3e831bde74dc73a4112ed874338937ea25528936bbf87fbdca90949f1cd38f0c7af5a4cd0fa8f3c2b3298c91830771445ddbc435d6947a44994#npm:1.0.10"],\
+          ["@sveltejs/kit", null],\
+          ["@types/next", null],\
+          ["@types/react", "npm:18.2.79"],\
+          ["@types/svelte", null],\
+          ["@types/sveltejs__kit", null],\
+          ["@types/vue", null],\
+          ["@types/vue-router", null],\
+          ["next", "virtual:17104e199f56e3e831bde74dc73a4112ed874338937ea25528936bbf87fbdca90949f1cd38f0c7af5a4cd0fa8f3c2b3298c91830771445ddbc435d6947a44994#npm:14.2.2"],\
+          ["react", "npm:18.2.0"],\
+          ["svelte", null],\
+          ["vue", null],\
+          ["vue-router", null]\
+        ],\
+        "packagePeers": [\
+          "@sveltejs/kit",\
+          "@types/next",\
+          "@types/react",\
+          "@types/svelte",\
+          "@types/sveltejs__kit",\
+          "@types/vue-router",\
+          "@types/vue",\
+          "next",\
+          "react",\
+          "svelte",\
+          "vue-router",\
+          "vue"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2532,6 +2575,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:20.12.7"],\
           ["@types/react", "npm:18.2.79"],\
           ["@types/react-dom", "npm:18.2.25"],\
+          ["@vercel/speed-insights", "virtual:17104e199f56e3e831bde74dc73a4112ed874338937ea25528936bbf87fbdca90949f1cd38f0c7af5a4cd0fa8f3c2b3298c91830771445ddbc435d6947a44994#npm:1.0.10"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-next", "virtual:17104e199f56e3e831bde74dc73a4112ed874338937ea25528936bbf87fbdca90949f1cd38f0c7af5a4cd0fa8f3c2b3298c91830771445ddbc435d6947a44994#npm:14.2.2"],\
           ["next", "virtual:17104e199f56e3e831bde74dc73a4112ed874338937ea25528936bbf87fbdca90949f1cd38f0c7af5a4cd0fa8f3c2b3298c91830771445ddbc435d6947a44994#npm:14.2.2"],\
