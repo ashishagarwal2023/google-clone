@@ -14,14 +14,14 @@ export const Header = () => {
         Images
       </a>
       {session.status === "authenticated" && (
-        <button className="rounded-full p-2 hover:bg-gray-100">
+        <button className="rounded-full p-2 hover:bg-gray-100" title="Expirements Icon">
           <Image src="/icons/expirements.svg" width={24} height={24} alt="Expirements Icon" />
         </button>
       )}
-      <button className="mr-5 rounded-full p-2 hover:bg-gray-100 h-10 w-10 fill-[#5f6368]">
+      <button className="mr-5 rounded-full p-2 hover:bg-gray-100 h-10 w-10 fill-[#5f6368]" title="Bars Icon">
         <Image src="/icons/bars.svg" width={40} height={40} alt="Bars Icon" />
       </button>
-      <button>
+      <button title="Account">
         {session.status === "authenticated" ? (
           <a onClick={() => signOut()}>
             <Image
