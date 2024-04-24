@@ -22,10 +22,10 @@ export default function RootLayout({
           name="google-site-verification"
           content="ULXVhmWyLRG9dl7SU5KY-WM0q1P4Y9Oa8DZ8uG9cBF8"
         />
-        <SpeedInsights />
       </head>
       <body>
         <NextAuthProvider>{children}</NextAuthProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
