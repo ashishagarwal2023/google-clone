@@ -12,9 +12,9 @@ export const Footer = () => {
   return (
     <footer className="text-[15px] text-gray-500 mt-8 md:fixed md:bottom-0 w-full">
       <div className="border-b bg-gray-100 py-4 px-8">
-        <select className="focus:outline-none select-none">
+        <select className="focus:outline-none select-none" name="Country">
           {countries.map((country, index) => (
-            <option>{country}</option>
+            <option key={index} value={country}>{country}</option>
           ))}          
         </select>
       </div>
